@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rashi Computers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<body>
+
+        <div class="super"><div class="scrollmenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">Services</a>
+            <a href="#about">About</a>
+            <a href="#home" class="split">signup</a>
+            <a href="#news" class="split">login</a>
+            ...
+          
+        </div>
+          <div class="logo"><img src="rashi.jpeg" alt="logo">
+            
+          </div>
+          
+        <div class="left"><h1>Hardware and Software</h1>
+        <h3>Service provider</h3>
+        </div>
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="slide">
+          
+          <div class="slideshow-container">
+          
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="cpu.jpg" >
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="laptop.jpg">
+            
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="desktop.jpg">
+           
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+        </div>
+        <div class="main">
+          
+        <div class="main1"><img src="repair.jpg" alt="">
+          <h2 class="yellow">Repair</h2>
+          <p> Computer repair is the process of identifying, troubleshooting and resolving problems and issues in a faulty computer. Computer repair is a broad field encompassing many tools, techniques and procedures used to repair computer hardware, software problems.</p>
+       <p><a href="#">read more...</a></p>
+        </div>
+        <div class="main1"><img src="intel.jpg" alt="">
+          <h2 class="yellow">Products</h2>
+          <p>Computer Product means a device which is designed for or permits the end user to install a wide variety of commercially available software applications thereon including, but not limited to, personal computers, handheld “Personal Digital Assistants</p>
+       <p><a href="#">read more...</a></p>
+        </div>
+        <div class="main1"><img src="coom.jpg" alt="">
+          <h2 class="yellow">Customized</h2>
+          <p> Customization of a product is the manufacturing ability to offer a variety of designs or details for one product, made specifically to a buyer's liking, much in part because of advances in technology and manufacturing production processes.</p>
+       <p><a href="#">read more...</a></p>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="service" ><div><i class="fa-sharp fa-solid fa-indian-rupee-sign">  CASH ON DELIVERY</i></div>
+     <div> <i class="fa-solid fa-file-invoice">  GST INVOICE</i> </div>
+      <div><i class="fa-solid fa-truck">  FREE SHIPPING</i></div>
+    </div>
+   <footer> 
+    <div class="main2">
+      <div class="main3">
+      <h3>Copyright - All Rights Reserved</h3>
+    <p> Rashi Computers is not responsible for typographical or photographical errors. <br>Prices and specifications subject to change without notice</p>
+    </div>
+     <a href="#"><p>About us</p>
+      <p>Email</p>
+     
+      <p>Shipping policy</p>
+      <p> Terms and Conditions</p>
+      </a>
+      
+    <div class="icon">
+      <p> Follow Us ON</p>
+      <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+    
+
+  </footer>
+  
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+    </script>
+
+</body>
+</html>
